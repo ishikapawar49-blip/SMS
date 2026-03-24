@@ -2,7 +2,7 @@ import React from "react";
 import FeaturesHero from "./FeaturesHero";
 import FeaturesGrid from "./featuresGrid";
 import FeaturesIntegration from "./FeaturesIntegration";
-// import FeaturesDetailed from "./FeaturesDetailed";
+
 
 const Features = () => {
   return (
@@ -10,7 +10,6 @@ const Features = () => {
       <FeaturesHero />
       <FeaturesGrid />
       <FeaturesIntegration />
-      {/* <FeaturesDetailed /> */}
     </>
   );
 };
