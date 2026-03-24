@@ -1,6 +1,6 @@
 import React from "react";
 import FeaturesHero from "./FeaturesHero";
-import FeaturesGrid from "./featuresGrid";
+import FeaturesGrid from "./FeaturesGrid";
 import FeaturesIntegration from "./FeaturesIntegration";
 
 
