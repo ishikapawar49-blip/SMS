@@ -1,0 +1,144 @@
+/* MAIN */
+.contactSec-main {
+  padding: 80px 60px;
+  background: #f9fafb;
+}
+
+/* HEADER */
+.contactSec-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contactSec-header h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contactSec-header p {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+/* LAYOUT */
+.contactSec-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+/* LEFT SIDE */
+.contactSec-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactSec-card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+/* ICON */
+.contactSec-icon {
+  width: 50px;
+  height: 50px;
+  background: #e6f4ef;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2f855a;
+  font-size: 22px;
+}
+
+/* TEXT */
+.contactSec-card h4 {
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  margin-bottom: 4px;
+  color: black;
+}
+
+.contactSec-bold {
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 16px;
+  color: black;
+  text-align: left;;
+}
+
+.contactSec-card span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* FORM BOX */
+.contactSec-formBox {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.05);
+}
+
+.contactSec-formBox h3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* FORM */
+.contactSec-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contactSec-row {
+  display: flex;
+  gap: 16px;
+}
+
+.contactSec-form input,
+.contactSec-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: none;
+  background: #f3f4f6;
+  font-size: 15px;
+  outline: none;
+}
+
+/* BUTTON */
+.contactSec-btn {
+  margin-top: 10px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  border: none;
+  background: #2f855a;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contactSec-btn:hover {
+  background: #276749;
+}

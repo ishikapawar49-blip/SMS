@@ -1,0 +1,89 @@
+.testimonials {
+  padding: 60px 0;
+  background: #ffffff;
+}
+
+.testimonials-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Heading */
+.testimonials h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.testimonials p {
+  font-size: 18px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* Grid */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Card */
+.testimonial-card {
+  background: #f9fafb;
+  padding: 28px;
+  border-radius: 16px;
+  text-align: left;
+  border: 1px solid #e5e7eb;
+}
+
+/* Stars */
+.stars {
+  display: flex;
+  gap: 6px;
+  color: #f59e0b;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+/* Text */
+.testimonial-text {
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* User */
+.user {
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  background: #2e7d65;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.user h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.user span {
+  font-size: 14px;
+  color: #6b7280;
+}

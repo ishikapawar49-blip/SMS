@@ -1,0 +1,82 @@
+.about-highlights-section {
+  background: #f9fafb;  
+  padding: 60px 0 60px 0;
+}
+/* Heading Section */
+.about-highlights-header {
+  text-align: center;
+  width: 700px;
+  margin: 0 auto 60px;
+}
+
+.about-highlights-header h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.about-highlights-header p {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Container */
+.about-highlights-container {
+  width: 98%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* Card */
+.about-highlight-card {
+  background: #ffffff;
+  padding: 24px 24px;
+  border-radius: 18px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  transition: 0.3s ease;
+  height: 280px;
+  width: 280px;
+}
+
+/* Icon box */
+.about-highlight-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  background: #e6f4ef;
+  color: #2e7d65;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 26px;
+}
+
+/* Title */
+.about-highlight-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+/* Description */
+.about-highlight-desc {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+/* Hover subtle */
+.about-highlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}

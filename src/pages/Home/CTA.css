@@ -1,0 +1,81 @@
+.cta {
+  position: relative;
+  height: 520px;  
+  padding: 80px 20px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay */
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Content */
+.cta-content {
+  position: relative;
+  text-align: center;
+  max-width: 800px;
+  color: white;
+}
+
+/* Heading */
+.cta-content h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: white;
+}
+
+/* Text */
+.cta-content p {
+  font-size: 18px;
+  color: #d1d5db;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Primary */
+.cta-primary {
+  background: #2e7d65;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* Secondary */
+.cta-secondary {
+  background: transparent;
+  border: 2px solid #2e7d65;
+  color: #2e7d65;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Hover */
+.cta-primary:hover {
+  background: #256b56;
+}
+
+.cta-secondary:hover {
+  background: #2e7d65;
+  color: white;
+}

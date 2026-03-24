@@ -1,0 +1,83 @@
+/* MAIN */
+.featInt-main {
+  padding: 60px 60px;
+  background: #f9fafb;
+  text-align: center;
+}
+
+/* HEADER */
+.featInt-header h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.featInt-header p {
+  font-size: 18px;
+  color: #6b7280;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+/* WRAPPER CARD (BIG BOX) */
+.featInt-cardWrapper {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 20px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+/* CARD */
+.featInt-card {
+  padding: 20px;
+}
+
+/* ICON BASE */
+.featInt-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 30px;
+  margin: 0 auto 20px;
+}
+
+/* COLORS (IMPORTANT EXACT MATCH STYLE) */
+.featInt-blue {
+  background: #e0ecff;
+  color: #2563eb;
+}
+
+.featInt-green {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.featInt-purple {
+  background: #ede9fe;
+  color: #7c3aed;
+}
+
+/* TEXT */
+.featInt-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.featInt-card p {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+  max-width: 260px;
+  margin: 0 auto;
+}
