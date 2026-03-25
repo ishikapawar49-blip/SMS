@@ -4,9 +4,10 @@
 }
 
 .features-container {
-  width: 90%;
-  margin: 0 30px 0 30px;
-  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 /* Heading */
@@ -28,8 +29,8 @@
 /* Grid */
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
 }
 
 /* Card */
@@ -39,10 +40,13 @@
   border-radius: 16px;
   text-align: left;
   transition: 0.3s;
-  height :250px;
-  width: 280px;
-}
 
+  width: 100%;        /* 🔥 full responsive */
+  height: 100%;       /* 🔥 equal height in grid */
+  min-height: 220px;  /* optional clean look */
+  display: flex;
+  flex-direction: column;
+}
 /* Icon */
 .icon-box {
   width: 52px;
@@ -82,4 +86,47 @@
 /* Hover */
 .feature-card:hover {
   transform: translateY(-5px);
+}
+
+/* ============================= */
+/* 📱 MOBILE */
+/* ============================= */
+@media (max-width: 480px) {
+  .features {
+    padding: 60px 15px 60px 6px;
+  }
+  .features p {
+    margin-bottom: 40px;
+  }
+
+  .feature-card {
+    padding: 20px;
+  }
+}
+
+/* ============================= */
+/* 📲 TABLET */
+/* ============================= */
+@media (max-width: 768px) {
+  .features-grid {
+    gap: 20px;
+  }
+}
+
+/* ============================= */
+/* 💻 SMALL LAPTOP */
+/* ============================= */
+@media (max-width: 1024px) {
+  .features-container {
+    max-width:100%;
+  }
+}
+
+/* ============================= */
+/* 🖥 LARGE SCREENS */
+/* ============================= */
+@media (min-width: 1400px) {
+  .features-container {
+    max-width: 1300px;
+  }
 }

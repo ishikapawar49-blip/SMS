@@ -142,3 +142,35 @@
 .contactSec-btn:hover {
   background: #276749;
 }
+
+@media (max-width: 768px) {
+  .contactSec-container {
+    grid-template-columns: 1fr; 
+  }
+}
+@media (max-width: 480px) {
+  .contactSec-row {
+    flex-direction: column; /* 🔥 one below one */
+  }
+  
+  .contactSec-container {
+    grid-template-columns: 1fr; 
+  }
+
+  .contactSec-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+ 
+  .contactSec-card {
+    padding: 16px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .contactSec-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+}

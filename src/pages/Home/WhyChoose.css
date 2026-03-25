@@ -4,9 +4,10 @@
 }
 
 .why-container {
-  width: 90%;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
+  padding: 0 16px;
 }
 
 /* Heading */
@@ -21,7 +22,7 @@
 /* Grid */
 .why-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 40px;
 }
 
@@ -60,4 +61,53 @@
   color: #6b7280;
   max-width: 250px;
   line-height: 1.6;
+}
+
+
+/* ============================= */
+/* 📱 MOBILE */
+/* ============================= */
+@media (max-width: 480px) {
+  .why {
+    padding: 60px 15px;
+  }
+
+  .why h2 {
+    margin-bottom: 40px;
+  }
+
+  .why-grid {
+    gap: 20px;
+  }
+
+  .why-card p {
+    max-width: 100%;
+  }
+}
+
+/* ============================= */
+/* 📲 TABLET */
+/* ============================= */
+@media (max-width: 768px) {
+  .why-grid {
+    gap: 25px;
+  }
+}
+
+/* ============================= */
+/* 💻 SMALL LAPTOP */
+/* ============================= */
+@media (max-width: 1024px) {
+  .why-container {
+    max-width: 95%;
+  }
+}
+
+/* ============================= */
+/* 🖥 LARGE SCREENS */
+/* ============================= */
+@media (min-width: 1400px) {
+  .why-container {
+    max-width: 1300px;
+  }
 }

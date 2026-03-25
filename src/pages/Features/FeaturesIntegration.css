@@ -1,6 +1,6 @@
 /* MAIN */
 .featInt-main {
-  padding: 60px 60px;
+  padding: clamp(50px, 8vw, 80px) 16px; /* 🔥 fix mobile spacing */
   background: #f9fafb;
   text-align: center;
 }
@@ -24,17 +24,19 @@
   background: white;
   border-radius: 20px;
   padding: 40px 20px;
-
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
-
   box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
 
 /* CARD */
 .featInt-card {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
 
 /* ICON BASE */
@@ -80,4 +82,19 @@
   line-height: 1.6;
   max-width: 260px;
   margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .featInt-cardWrapper {
+    padding: 25px 10px;
+    gap: 16px;
+  }
+
+  .featInt-card h3 {
+    font-size: 18px;
+  }
+
+  .featInt-card p {
+    font-size: 14px;
+  }
 }

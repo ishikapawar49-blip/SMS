@@ -30,21 +30,23 @@
 /* GRID */
 .featuresGrid-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 🔥 auto responsive */
+  gap: 24px;
 }
 
 /* CARD */
 .featuresGrid-card {
   background: #ffffff;
   border-radius: 16px;
-  padding: 30px 20px;
+  padding: 24px;
   text-align: left;
   border: 1px solid #e5e7eb;
   transition: all 0.3s ease;
-  cursor: pointer;
-}
 
+  height: 100%; /* 🔥 equal height */
+  display: flex;
+  flex-direction: column;
+}
 /* HOVER EFFECT */
 .featuresGrid-card:hover {
   transform: translateY(-6px);
@@ -81,14 +83,19 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 1024px) {
-  .featuresGrid-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media (max-width: 600px) {
-  .featuresGrid-grid {
-    grid-template-columns: 1fr;
+@media (max-width: 480px) {
+  .featuresGrid-section {
+    padding: 60px 0;
+  }
+
+  .featuresGrid-card {
+    padding: 20px;
+  }
+
+  .featuresGrid-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
   }
 }

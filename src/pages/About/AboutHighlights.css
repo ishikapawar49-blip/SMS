@@ -5,7 +5,7 @@
 /* Heading Section */
 .about-highlights-header {
   text-align: center;
-  width: 700px;
+   width: 700px;
   margin: 0 auto 60px;
 }
 
@@ -79,4 +79,47 @@
 .about-highlight-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 480px) {
+  .about-highlights-container {
+    grid-template-columns: 1fr !important; /* 🔥 force 1 card */
+    gap: 20px;
+    justify-items: center;
+    padding:10px;
+  }
+
+  .about-highlight-card {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .about-highlights-header {
+    width: 100%;       /* 🔥 fix 700px issue */
+    padding: 0 16px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-highlights-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .about-highlight-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-highlights-header {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
+@media (max-width: 1200px) {
+  .about-highlights-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

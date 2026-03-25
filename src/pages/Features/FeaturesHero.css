@@ -21,8 +21,9 @@
 .features-hero-content {
   position: relative;
   text-align: center;
-  width: 900px;
-  padding: 0 20px;
+  max-width: 900px;
+  width: 100%;
+  padding: 0 16px;
   color: #ffffff;
 }
 
@@ -41,4 +42,29 @@
   font-size: 20px;
   line-height: 1.6;
   color: #e5e7eb;
+}
+
+@media (max-width: 480px) {
+  .features-hero-section {
+    min-height: 420px;
+    margin-top: 60px;
+  }
+
+  .features-hero-title {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .features-hero-desc {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .features-hero-title {
+    font-size: 42px;
+  }
+  .features-hero-content{
+  width: 100%;
+  padding: 0 20px;
+  }
 }

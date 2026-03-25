@@ -49,3 +49,44 @@
   color: #6b7280;
   margin-bottom: 20px;
 }
+
+@media (max-width: 480px) {
+  .about-info-section {
+    padding: 50px 0;
+  }
+
+  .about-info-container {
+    padding: 0 16px;
+    gap: 30px;
+  }
+
+  .about-info-image-wrapper {
+    border-radius: 16px;
+  }
+  .about-info-title {
+    /* font-size: 28px; */
+    text-align: center;
+  }
+  .about-info-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-info-container {
+    grid-template-columns: 1fr; /* 🔥 stack */
+  }
+   .about-info-title {
+    /* font-size: 28px; */
+    text-align: center;
+  }
+  .about-info-text {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1400px) {
+  .about-info-container {
+    max-width: 1300px;
+  }
+}

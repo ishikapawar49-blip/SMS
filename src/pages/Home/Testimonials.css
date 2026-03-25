@@ -4,9 +4,10 @@
 }
 
 .testimonials-container {
-  width: 90%;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
+  padding: 0 16px;
 }
 
 /* Heading */
@@ -27,19 +28,22 @@
 /* Grid */
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
 }
 
 /* Card */
 .testimonial-card {
   background: #f9fafb;
-  padding: 28px;
+  padding: 26px;
   border-radius: 16px;
   text-align: left;
   border: 1px solid #e5e7eb;
-}
 
+  height: 100%; /* 🔥 equal height */
+  display: flex;
+  flex-direction: column;
+}
 /* Stars */
 .stars {
   display: flex;
@@ -86,4 +90,52 @@
 .user span {
   font-size: 14px;
   color: #6b7280;
+}
+
+/* ============================= */
+/* 📱 MOBILE */
+/* ============================= */
+@media (max-width: 480px) {
+  .testimonials {
+    padding: 60px 15px 60px 0px;
+  }
+
+  .testimonials p {
+    margin-bottom: 40px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .testimonial-text {
+    font-size: 14px;
+  }
+}
+
+/* ============================= */
+/* 📲 TABLET */
+/* ============================= */
+@media (max-width: 768px) {
+  .testimonials-grid {
+    gap: 20px;
+  }
+}
+
+/* ============================= */
+/* 💻 SMALL LAPTOP */
+/* ============================= */
+@media (max-width: 1024px) {
+  .testimonials-container {
+    max-width: 95%;
+  }
+}
+
+/* ============================= */
+/* 🖥 LARGE SCREENS */
+/* ============================= */
+@media (min-width: 1400px) {
+  .testimonials-container {
+    max-width: 1300px;
+  }
 }

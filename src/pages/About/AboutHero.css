@@ -41,3 +41,35 @@
   line-height: 1.6;
   color: #d1d5db;
 }
+/* 📲 TABLET */
+@media (max-width: 768px) {
+  .about-hero-section {
+    padding: 80px 16px;
+  }
+
+  .about-hero-title {
+    margin-bottom: 16px;
+  }
+}
+/* 📱 MOBILE */
+@media (max-width: 480px) {
+  .about-hero-section {
+    padding: 70px 14px;
+    min-height: 420px;
+  }
+
+  .about-hero-title {
+     margin: 40px auto 20px;
+    line-height: 1.0;
+  }
+
+  .about-hero-desc {
+    line-height: 1.5;
+  }
+}
+/* 📱 SMALL MOBILE */
+@media (max-width: 360px) {
+  .about-hero-section {
+    padding: 60px 12px;
+  }
+}
