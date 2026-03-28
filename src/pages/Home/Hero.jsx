@@ -1,6 +1,6 @@
 import React from "react";
 // import heroBg from "../../assets/bg-hero.png";
-import heroBg from "../../assets/hero_bg1.png";
+import heroBg from "../../assets/aboutbg1.png";
 import "./Hero.css";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { FiArrowRight } from "react-icons/fi";
@@ -12,11 +12,9 @@ const Hero = () => {
   return (
     <section
       className="hero"
-      style={{
-        background: `url(${heroBg}) no-repeat center/cover`,
-      }}
+      
     >
-      <div className="overlay"></div>
+      {/* <div className="overlay"></div> */}
 
       <div className="hero-content">
         

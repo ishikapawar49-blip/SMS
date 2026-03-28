@@ -1,7 +1,7 @@
 /* MAIN */
 .featInt-main {
   padding: clamp(50px, 8vw, 80px) 16px; /* 🔥 fix mobile spacing */
-  background: #f9fafb;
+  background: #ffffff;
   text-align: center;
 }
 

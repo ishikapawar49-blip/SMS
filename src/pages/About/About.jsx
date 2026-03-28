@@ -2,6 +2,7 @@ import React from "react";
 import AboutHero from "./AboutHero";
 import AboutInfo from "./AboutInfo";
 import AboutHighlights from "./AboutHighlights";
+import SuccessJourney from "./SuccessJourney";
 
 const About = () => {
   return (
@@ -9,6 +10,7 @@ const About = () => {
       <AboutHero />
       <AboutInfo />
       <AboutHighlights />
+      <SuccessJourney />
     </>
   );
 };

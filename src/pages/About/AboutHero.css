@@ -9,10 +9,15 @@
 }
 
 /* Overlay */
-.about-hero-overlay {
+/* .about-hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.6);
+} */
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(128, 83, 83, 0.11); 
 }
 
 /* Content */
@@ -27,7 +32,7 @@
 /* Title */
 .about-hero-title {
   font-family: 'Times New Roman', Times, serif;
-  color: white;
+  color: #ffffff;
   font-size: 56px;
 
   font-weight: 700;
@@ -39,7 +44,7 @@
 .about-hero-desc {
   font-size: 20px;
   line-height: 1.6;
-  color: #d1d5db;
+  color: rgb(255, 255, 255);
 }
 /* 📲 TABLET */
 @media (max-width: 768px) {

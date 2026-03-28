@@ -1,0 +1,93 @@
+.journey-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f8f9fb;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Header */
+.journey-header h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 52px;
+  color: #2e7d32;
+  margin: 30px 20px;
+}
+
+.timeline-label {
+
+  color: #0f0f0f;
+  font-size: 26px;
+}
+
+.journey-desc {
+  max-width: 700px;
+  margin: 20px auto 60px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Timeline */
+.timeline-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #4caf50;
+  z-index: 1;
+}
+
+/* Items */
+.timeline-item {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  flex: 1;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background: #2e7d32;
+  border-radius: 50%;
+  margin: auto;
+  border: 4px solid #c8e6c9;
+}
+
+.year {
+  margin-top: 10px;
+  color: #555;
+  font-size: 16px;
+}
+
+/* Card */
+.card {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}

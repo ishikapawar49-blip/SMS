@@ -107,6 +107,12 @@
   display: flex;
   gap: 16px;
 }
+.error {
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+}
 
 .contactSec-form input,
 .contactSec-form textarea {

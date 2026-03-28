@@ -74,7 +74,7 @@ const Navbar = () => {
     className="mobile-demo-btn"
     onClick={() => handleNavigate("/contact")}
   >
-    Demo
+    Schedule a Demo
   </button>
 </div>
 

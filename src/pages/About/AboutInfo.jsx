@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutInfo.css";
-import aboutImg from "../../assets/about-info.jpg"; // jo image use kar rahi hai
+import aboutImg from "../../assets/gallery-51.jpg"; 
 
 const AboutInfo = () => {
   return (
@@ -17,16 +17,22 @@ const AboutInfo = () => {
           <h2 className="about-info-title">What is SocietyMS?</h2>
 
           <p className="about-info-text">
-            SocietyMS is a comprehensive, cloud-based society management system that brings 
-            automation, transparency, and seamless communication to residential complexes, 
-            housing societies, and apartment communities. From maintenance billing to 
-            complaint tracking, visitor management to notice boards — every aspect of society 
-            operations is digitized and streamlined.
+            SocietyMS is a comprehensive, cloud-based Society Management System designed to simplify 
+            and automate the day-to-day operations of residential complexes, housing societies, and
+             apartment communities. It brings together all essential functionalities into a single
+              platform, ensuring efficiency, transparency, and seamless communication between residents
+               and administrators.
+               From maintenance billing and expense tracking to complaint management, visitor handling,
+             and digital notice boards — every aspect of society operations is fully digitized and
+              streamlined for better management and user experience.
+
           </p>
 
           <p className="about-info-text">
-            Our platform is trusted by hundreds of societies across India,
-            serving thousands of residents with an intuitive, modern interface.
+           Our platform is trusted by hundreds of societies across India and serves thousands
+            of residents through an intuitive, modern, and user-friendly interface. SocietyMS
+             empowers communities to operate smarter, faster, and more efficiently while enhancing
+              the overall living experience.
           </p>
         </div>
 

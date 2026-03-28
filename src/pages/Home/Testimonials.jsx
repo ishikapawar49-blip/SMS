@@ -6,7 +6,7 @@ const data = [
   {
     text: `"SocietyMS has transformed how we manage our society. Billing is automated, complaints are tracked efficiently, and communication has never been better."`,
     name: "Arun Mehta",
-    role: "Society President, Green Valley",
+    role: "Society President, Harmony",
     initials: "AM",
   },
   {
@@ -36,27 +36,28 @@ const Testimonials = () => {
         <div className="testimonials-grid">
           {data.map((item, index) => (
             <div className="testimonial-card" key={index}>
-              
-              {/* Stars */}
-              <div className="stars">
-                {[...Array(5)].map((_, i) => (
-                  <FaStar key={i} />
-                ))}
-              </div>
 
-              {/* Text */}
-              <p className="testimonial-text">{item.text}</p>
+  {/* TOP HEADER */}
+  <div className="testimonial-top">
+    <div className="user">
+      <div className="avatar">{item.initials}</div>
+      <div>
+        <h4>{item.name}</h4>
+        <span>{item.role}</span>
+      </div>
+    </div>
 
-              {/* User */}
-              <div className="user">
-                <div className="avatar">{item.initials}</div>
-                <div>
-                  <h4>{item.name}</h4>
-                  <span>{item.role}</span>
-                </div>
-              </div>
+    <div className="stars">
+      {[...Array(5)].map((_, i) => (
+        <FaStar key={i} />
+      ))}
+    </div>
+  </div>
 
-            </div>
+  {/* TEXT */}
+  <p className="testimonial-text">{item.text}</p>
+
+</div>
           ))}
         </div>
 

@@ -1,6 +1,6 @@
 import React from "react";
 import "./FeaturesHero.css";
-import featureBg from "../../assets/feature-bg.png"; // same bg ya new use kar sakti ho
+import featureBg from "../../assets/feature-bg1.png"; // same bg ya new use kar sakti ho
 
 const FeaturesHero = () => {
   return (

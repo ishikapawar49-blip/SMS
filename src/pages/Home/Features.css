@@ -23,7 +23,7 @@
   font-size: 18px;
   color: #6b7280;
   max-width: 650px;
-  margin: 0 auto 60px;
+  margin: 0 auto 10px;
 }
 
 /* Grid */
@@ -40,7 +40,6 @@
   border-radius: 16px;
   text-align: left;
   transition: 0.3s;
-
   width: 100%;        /* 🔥 full responsive */
   height: 100%;       /* 🔥 equal height in grid */
   min-height: 220px;  /* optional clean look */

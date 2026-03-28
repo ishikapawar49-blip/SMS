@@ -1,5 +1,5 @@
 .about-highlights-section {
-  background: #f9fafb;  
+  background: #ffffff;  
   padding: 60px 0 60px 0;
 }
 /* Heading Section */
@@ -25,6 +25,7 @@
 
 /* Container */
 .about-highlights-container {
+  background: #ffffff;
   width: 98%;
   margin: 0 auto;
   display: grid;
