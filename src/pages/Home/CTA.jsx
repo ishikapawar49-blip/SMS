@@ -1,6 +1,6 @@
 import React from "react";
 import "./CTA.css";
-import ctaBg from "../../assets/cta-bg.jpg";
+import ctaBg from "../../assets/bg-h.png";
 import { FiArrowRight } from "react-icons/fi";
 import { useNavigate } from "react-router-dom"; // ✅ IMPORTANT
 
