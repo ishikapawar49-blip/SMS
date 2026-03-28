@@ -46,7 +46,7 @@ const Navbar = () => {
         {/* Button */}
         <div className="nav-actions">
           <button className="demo-btn" onClick={() => handleNavigate("/contact")}>
-            Demo
+           Demo
           </button>
         </div>
 
