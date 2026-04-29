@@ -109,6 +109,20 @@
   color: #9ca3af;
 }
 
+
+/* add only this in Footer.css */
+
+.footer-col ul li a,
+.footer-col ul li a:visited {
+  text-decoration: none;
+  color: #9ca3af;
+  transition: 0.2s;
+}
+
+.footer-col ul li a:hover {
+  color: white;
+}
+
 /* ================= TABLET ================= */
 @media (max-width: 992px) {
   .footer-container {
