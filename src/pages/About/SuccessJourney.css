@@ -9,9 +9,10 @@
 .journey-header h1 {
   font-family: 'Times New Roman', Times, serif;
   font-size: 52px;
-  font-weight: 600px;
+  font-weight: 600;
   color: #000000;
   margin: 30px 20px;
+  line-height: 1.2; /* ✅ overlap fix */
 }
 
 .timeline-label {
@@ -21,7 +22,7 @@
 
 .journey-desc {
   max-width: 700px;
-  margin: 20px auto 60px;
+  margin: 20px auto 264px;
   color: #555;
   line-height: 1.6;
 }
@@ -32,7 +33,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 900px;
+  width: 100%;
+  gap: 40px;
   margin: auto;
 }
 
@@ -40,10 +42,10 @@
   position: absolute;
   top: 5px;
   left: 0;
-  width: 100%;
   height: 3px;
   background: #4caf50;
   z-index: 1;
+  width: 100%;
 }
 
 /* Items */
@@ -90,4 +92,83 @@
 .card p {
   font-size: 14px;
   color: #555;
+}
+
+/* ================= MOBILE ================= */
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .journey-section {
+    padding: 40px 16px;
+  }
+
+  .timeline-label {
+    font-size: 20px;
+  }
+
+  .journey-header h1 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin: 18px 0;
+    word-break: break-word;
+  }
+
+  .journey-desc {
+    font-size: 15px;
+    margin: 16px auto 20px;
+    line-height: 1.7;
+  }
+
+  .timeline-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 0;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+  }
+
+  .timeline-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .timeline-item {
+    min-width: 100%;
+    flex: 0 0 auto;
+    position: relative;
+    scroll-snap-align: center;
+    padding-top: 48px;   /* ✅ sab items same level */
+  }
+
+  .timeline-line {
+    top: 62px;           /* ✅ line dot ke center me */
+    width: 530%;
+  }
+
+  .dot {
+    margin-top: 0;       /* ✅ remove unequal spacing */
+    position: relative;
+    z-index: 2;
+  }
+
+  .year {
+    position: absolute;
+    top: 12px;           /* ✅ sab years same level */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .card {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

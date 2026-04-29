@@ -20,6 +20,7 @@ const VisitorSection = () => {
     { icon: <Users />, text: "Daily Staff Management" },
     { icon: <Truck />, text: "Authorize Courier/Delivery" },
     { icon: <Bell />, text: "Emergency Alert" },
+    
   ];
 
   return (

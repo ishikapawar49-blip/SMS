@@ -154,29 +154,41 @@
     grid-template-columns: 1fr; 
   }
 }
+/* ONLY mobile view fix */
 @media (max-width: 480px) {
-  .contactSec-row {
-    flex-direction: column; /* 🔥 one below one */
-  }
-  
-  .contactSec-container {
-    grid-template-columns: 1fr; 
+
+  .contactSec-main {
+    padding: 60px 20px;
   }
 
-  .contactSec-btn {
-    font-size: 14px;
-    padding: 12px;
-  }
- 
   .contactSec-card {
-    padding: 16px;
-    width: 100%;
-    max-width: 300px;
+    margin: 0 auto;          /* center card */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  /* icon top, text center */
   }
 
-  .contactSec-icon {
-    width: 44px;
-    height: 44px;
-    font-size: 18px;
+  .contactSec-card h4,
+  .contactSec-bold,
+  .contactSec-card span {
+    text-align: center;
+  }
+
+  .contactSec-formBox {
+    text-align: center;
+  }
+
+  .contactSec-formBox h3 {
+    text-align: center;
+  }
+
+   .contactSec-row {
+    flex-direction: column;   /* name email ek ke niche ek */
+    gap: 16px;
+  }
+
+  .contactSec-row input {
+    width: 100%;
   }
 }

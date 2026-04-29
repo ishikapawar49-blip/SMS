@@ -14,31 +14,8 @@ import phone10 from "../../assets/Delivery-Courier-Management.png";
 import phone11 from "../../assets/Staff-Helper-Management.png";
 import phone12 from "../../assets/community.png";
 import bg from "../../assets/main.png";
-// import {
-//   FaBell,
-//   FaUsers,
-//   FaStore,
-//   FaCreditCard,
-//   FaAddressBook
-// } from "react-icons/fa";
 
 const FeatureBlock = ({ title, desc, points, phone, reverse }) => {
-
-  // 🎯 Dynamic icon selection
-//   const getIcon = () => {
-//     switch (title) {
-//       case "Alert":
-//         return <FaBell size={35} />;
-//       case "Community":
-//         return <FaUsers />;
-//       case "Maintenance & Billing":
-//       return <FaCreditCard />;
-//       case "Directory":
-//         return <FaAddressBook />;
-//       default:
-//         return <FaBell />;
-//     }
-//   };
 
   return (
     <section className={`feature-section ${reverse ? "reverse" : ""}`}>
@@ -54,9 +31,6 @@ const FeatureBlock = ({ title, desc, points, phone, reverse }) => {
 
         {/* 🔥 ICON */}
         <div className="heading-row">
-  {/* <div className="icon-circle">
-    {getIcon()}
-  </div> */}
 
   <h2>{title}</h2>
 </div>
